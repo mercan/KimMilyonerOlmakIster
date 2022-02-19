@@ -2,18 +2,6 @@
 
 Kim milyoner olmak ister yarışmasında ki çıkmış soruları sağlayan api
 
-## API Kullanımı
-
-#### Tüm öğeleri getir
-
-```http
-  GET /api/question
-```
-
-|  Parametre   |   Tip    |               Açıklama                |
-| :----------: | :------: | :-----------------------------------: |
-| `difficulty` | `string` | Sorunun zorluğunu belirler **(1-12)** |
-
 ## Bilgisayarınızda Çalıştırın
 
 Projeyi klonlayın
@@ -39,6 +27,22 @@ Sunucuyu çalıştırın
 ```bash
   npm run start
 ```
+
+## API Kullanımı
+
+#### Soru getir
+
+```http
+  GET /api/question
+```
+
+|  Parametre   |   Tip    |               Açıklama                |
+| :----------: | :------: | :-----------------------------------: |
+| `difficulty` | `string` | Sorunun zorluğunu belirler **(1-12)** |
+
+## Ekler
+
+Swagger Dökümantasyon: [Swagger](https://kimmilyonerolmakister.herokuapp.com/documentation)
 
 ## Kullanılan Teknolojiler
 
