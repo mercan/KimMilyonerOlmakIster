@@ -1,0 +1,80 @@
+{
+  "tags": ["Questions"],
+  "query": {
+    "type": "object",
+    "properties": {
+      "difficulty": {
+        "type": "number",
+        "minimum": 1,
+        "maximum": 12,
+        "description": "The difficulty of the question `(1-12)`"
+      }
+    }
+  },
+  "response": {
+    "200": {
+      "type": "object",
+      "description": "Successful response",
+      "properties": {
+        "statusCode": {
+          "type": "number",
+          "format": "integer",
+          "default": 200
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "difficulty": {
+              "type": "number",
+              "format": "integer",
+              "default": 12
+            },
+            "question": {
+              "type": "string",
+              "default": "Heredot’un yazdığı, Mısır firavununun dilin kökeni deneyinde, doğunca çobana verilerek kapatılan, o dahil kimseyle konuşturulmayan çocuğun söylediği ilk kelime nedir?"
+            },
+            "answers": {
+              "type": "object",
+              "properties": {
+                "A": {
+                  "type": "string",
+                  "default": "Ver"
+                },
+                "B": {
+                  "type": "string",
+                  "default": "Anne"
+                },
+                "C": {
+                  "type": "string",
+                  "default": "Ekmek"
+                },
+                "D": {
+                  "type": "string",
+                  "default": "Su"
+                }
+              }
+            },
+            "correctAnswer": {
+              "type": "string",
+              "default": "Ekmek"
+            }
+          }
+        }
+      }
+    },
+    "400": {
+      "description": "Bad request response",
+      "type": "object",
+      "properties": {
+        "statusCode": {
+          "type": "number",
+          "format": "integer",
+          "default": 400
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

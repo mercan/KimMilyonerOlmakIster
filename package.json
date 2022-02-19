@@ -1,0 +1,24 @@
+{
+  "name": "kimmilyonerolmakister",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./src/server.js",
+    "start:dev": "NODE_ENV=development nodemon ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "dotenv": "^16.0.0",
+    "fastify": "^3.27.2",
+    "fastify-cors": "^6.0.2",
+    "fastify-helmet": "^7.0.1",
+    "fastify-swagger": "^4.15.0",
+    "mongoose": "^6.2.2",
+    "winston": "^3.6.0",
+    "winston-daily-rotate-file": "^4.6.1"
+  }
+}
