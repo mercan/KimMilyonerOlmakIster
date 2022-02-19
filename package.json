@@ -1,15 +1,21 @@
 {
   "name": "kimmilyonerolmakister",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "./src/server.js",
+  "license": "ISC",
+  "author": {
+    "name": "İbrahim Can Mercan",
+    "email": "imrcn77@gmail.com",
+    "linkedin": "www.linkedin.com/in/İbrahim/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hhttps://github.com/mercan/KimMilyonerOlmakIster.git"
+  },
   "scripts": {
     "start": "NODE_ENV=production node ./src/server.js",
     "start:dev": "NODE_ENV=development nodemon ./src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "dayjs": "^1.10.7",
     "dotenv": "^16.0.0",
@@ -20,5 +26,8 @@
     "mongoose": "^6.2.2",
     "winston": "^3.6.0",
     "winston-daily-rotate-file": "^4.6.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
